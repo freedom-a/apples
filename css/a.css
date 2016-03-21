@@ -1,0 +1,41 @@
+.test{
+	width:400px;
+	height:400px;
+	border:1px solid pink;
+	margin:40px auto;
+	background:yellowgreen;
+	transition:all 0.6s ease;
+}
+.test:hover{
+	/* 以什么基准点为中心进行旋转 */
+	/* transform-origin:top center; */
+	/* 旋转 */
+	/* transform:rotateZ(180deg); */
+	/* 放大 */
+	 /* transform:scale(1.2,1.2); */
+	/* transform:scale(1.2,1.2) rotateY(360deg); */
+	/* 位移 */
+	/* transform:translate3d(100px,200px,0); */
+	/* transform:translateX(100px) translateY(100px) translateZ(0); */
+	/* 斜切 */
+    /* transform:skew(15deg,90deg); */
+}
+.test{
+	/* -webkit是前缀，有的浏览器不需要前缀 */
+	-webkit-animation-name:ab;
+	-webkit-animation-duration:4s;
+	animation-iteration-count:infinite;
+	animation-delay:2.5s;
+	animate-timing-function:ease;
+	animation-play-state:running;paused
+	animation-direction:alternate;
+	animation-fill-mode:both;
+}
+@keyframes ab{
+	0%,100%,25%,45%{
+		opacity:1;
+	}
+	15%,35%,55%{
+		opacity:0;
+	}
+}
